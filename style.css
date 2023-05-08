@@ -55,11 +55,13 @@ ul {
 }
 
 .logo {
+    width: 150px;
+    height: 50px;
     font-size: 30px;
     background-color: red;
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 10px 10px;
     text-align: center;
-    padding: 14px 18px 14px 18px;
+    padding-top: 12px;
     letter-spacing: -2px;
     font-family: 'Dancing Script', cursive;
     color: azure; 
@@ -71,7 +73,6 @@ ul {
 }
 
 nav {
-    border-radius: 0 0 5px 5px;
     height: 50px;
     display: flex;
     justify-content: flex-start;
@@ -101,7 +102,7 @@ div.red1 {
 }
 
 .contact {
-    border-radius: 0 0 5px 0;
+    border-radius: 0 0 10px 0;
     padding: 25px 15px 25px 15px;
 }
 
@@ -115,7 +116,7 @@ div.aboutA {
     border-left-width: 16px;    
     margin: 0;
     background-size: cover;
-    border-radius: 0 0 0 5px;
+    border-radius: 0 0 0 10px;
     color: azure;
 }
 
@@ -702,22 +703,9 @@ div.aboutA {
 
  .logo-footer {
     width: 140px;
+    height: 35px;
  }
-
- .line, .logo-footer {
-    grid-column: 2;
-    /* position: relative;
-    top: 500px; */
-    justify-self: center;
- }
-
- /* .line {
-    text-align: center;
-    width: 100%;
-    border-bottom: 1px solid black;
-    padding-bottom: 20px;
- } */
-
+ 
  .bottom-page {
   grid-column: 2;
   grid-row: 10;
@@ -727,41 +715,50 @@ div.aboutA {
   align-items: center;
  }
 
+ .bottom-page p {
+  font-size: 24px;
+  margin-bottom: 55px;
+ }
+
 footer {
     border-bottom: 1px solid black;
     border-top: 1px solid black;
     grid-column: 2;
     grid-row: 11;
-    /* position: relative;
-    top: 520px; */
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    padding: 35px 0 60px 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: 94%;
  }
 
  footer > div {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     font-family: Arial, Helvetica, sans-serif;
+    vertical-align: baseline;
  }
 
+ footer h3 {
+  font-size: 21px;
+ }
  footer a, footer p {
-    color: grey;
-    line-height: 1.6em;
+    line-height: 2;
+    color: #757575;
  }
 
  .contact-footer  p {
-    margin: 5px;
-    height: 17px;
+    margin: 0;
  }
 
  .find-us-on a > img {
     width: 120px;
     height: 40px;
-
  }
 
  .find-us-on .google {
-    padding-left: 0;
+   padding: 6px 0 0 0;
  }
 
  .find-us-on .google > img {
@@ -771,14 +768,11 @@ footer {
  .end {
     grid-column: 2;
     text-align: center;
-    padding: 60px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: grey;
-
+    padding: 50px;
  }
  .end > p > a {
     text-decoration: underline;
-    color: grey;
+    color: #757575;
  }
 
 /*  
